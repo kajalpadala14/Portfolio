@@ -1,0 +1,193 @@
+body {
+    line-height: 1.6;
+    background-color: #edc4d6;
+    color: #333;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(40deg, #edc4d6 40%, white 60%);
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    height: 15vh;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-right {
+    padding-right: 20px;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 2vw;
+    padding-left: 10px;
+}
+
+header .subtitle {
+    font-size: 1.2vw;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-container {
+    margin: 20px;
+    text-align: center;
+    height: 62vh;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: left;
+}
+
+.form-row div {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-row input, .form-row textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+.input-container input,
+.input-container textarea {
+    border-bottom: 4px solid #333 ;
+}
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.footer-content div {
+    margin-left: 20px;
+}
+
+.call, .email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email a, .call a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+@media (min-width: 768px) {
+    .form-row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        overflow-y: scroll;
+    }
+    form {
+        width: 90%; 
+    }
+    header h1 {
+        font-size: 6vw; 
+    }
+
+    header .subtitle {
+        font-size: 5vw; 
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-row input, .form-row textarea {
+        width: 100%; 
+        font-size: 16px;
+    }
+
+    button {
+        width: 50%; 
+        padding: 8px 0; 
+    }
+
+    .center {
+        justify-content: center;
+        width: 100%; 
+    }
+    .main-container{
+        height: 80vh;
+    }
+    footer {
+        padding: 10px;
+        height: 10vh;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content div {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}

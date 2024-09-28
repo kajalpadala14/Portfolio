@@ -1,0 +1,241 @@
+
+body {
+    background: linear-gradient(40deg, #edc4d6 40%, white 60%);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    height: 15vh;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* position: sticky; */
+}
+.header-right{
+    padding-right: 20px;
+}
+header h1 {
+    font-weight: normal;
+    font-size: 2vw; 
+    padding-left: 10px;
+}
+
+header .subtitle {
+    font-size: 1.2vw; 
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem; 
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.merged-container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap; 
+}
+
+.top-container,
+.bottum-container{
+    background-color: #edc4d6;
+    padding: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%; 
+}
+
+.bottum-container {
+    background-color: whitesmoke;
+}
+.bottum-container h1{
+    font-size: 80px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+.bottum-container h2{
+    align-items: center;
+    padding: 8px;
+}
+.bottum-container p{
+    margin-top: 50px;
+}
+.container img {
+    width: 20vw; 
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto;
+}
+#image{
+    border-radius: 50%;
+}
+#bebas-neue-regular{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.name {
+    font-size: 2vw; 
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.occupation {
+    font-size: 1.5vw; 
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.footer-content div {
+    margin-left: 20px;
+}
+.call,.email{
+    display: flex;
+    flex-direction: column;
+}
+.email a{
+    text-decoration: none;
+    color: #000;
+}
+.call a{
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 5vw; 
+    }
+
+    header .subtitle {
+        font-size: 4vw; 
+
+    .button {
+        padding: 12px 25px;
+        font-size: 4vw;
+    }
+    .merged-container {
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 30vw; 
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+    }
+}
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 6vw; 
+    }
+
+    header .subtitle {
+        font-size: 5vw; 
+    }
+
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 5vw;
+    }
+
+    .merged-container {
+        padding: 20px;
+       
+    }
+
+    .container img {
+        width: 40vw; 
+    }
+    .name {
+        font-size: 25px;
+    }
+    .occupation{
+        font-size: 20px;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+    }
+    footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content div {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,183 @@
+body {
+    background: linear-gradient(40deg, #edc4d6 40%, white 60%);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #edc4d6; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    height: 15vh;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+}
+.header-right{
+    padding-right: 20px;
+}
+header h1 {
+    font-weight: normal;
+    font-size: 2vw; 
+    padding-left: 10px;
+}
+
+header .subtitle {
+    font-size: 1.2vw; 
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+h1 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.footer-content div {
+    margin-left: 20px;
+}
+.call,.email{
+    display: flex;
+    flex-direction: column;
+}
+.email a{
+    text-decoration: none;
+    color: #000;
+}
+.call a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media(max-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content div {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    header h1 {
+        font-size: 6vw; 
+    }
+
+    header .subtitle {
+        font-size: 5vw; 
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content div {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+

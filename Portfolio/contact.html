@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="contact.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         </style>
-</head>
+   </head>
 <body>
     <header>
-        <h1 class="bebas-neue-regular">Kajal Padala |<span class="subtitle">Web Developer</span></h1>
+        <h1 class="bebas-neue-regular "> Kajal Padala |<span class="subtitle">Web Developer</span></h1>
         <div class="header-right">
             <a href="index.html" style="text-decoration: none; color: black;">About Me</a>
             <a href="resume.html" style="text-decoration: none; color: black; margin-left: 10px;">Resume</a>
@@ -21,30 +22,42 @@
     </header>
 
     <div class="main-container">
-        <h1 class="bebas-neue-regular">CONTACT</h1>
-        <form>
+        <h1 class="bebas-neue-regular">Contact</h1>
+        <form id="contactForm">
             <div class="form-row">
                 <div>
-                    <label for="first-name">First name*</label>
-                    <input type="text" name="first-name">
+                    <label for="first_name">First name*</label>
+                    <input type="text" name="first_name" id="first_name" required>
                 </div>
                 <div>
-                    <label for="last-name">Last name*</label>
-                    <input type="text" name="last-name">
+                    <label for="last_name">Last name*</label>
+                    <input type="text" name="last_name" id="last_name" required>
                 </div>
+               
             </div>
+
+            <div class="form-number">
+                <label for="mobile_number">Mobile Number*</label>
+                <input type="number" name="mobile_number" id="mobile_number" required oninput="validateMobileNumber()">
+                <span id="mobile-error" style="color: red; display: none;">Please enter a valid 10-digit number</span>
+            </div>
+
             <div class="form-row">
                 <label for="email">Email*</label>
-                <input type="email" name="email">
+                <input type="email" name="email" id="email" required>
             </div>
             <div class="form-row">
                 <label for="message">Message*</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+        
+            <div class="button">
+                <button type="submit">Submit</button>
             </div>
         </form>
-        <div class="button">
-            <button type="submit">Submit</button>
-        </div>
     </div>
 
     <footer>
@@ -66,5 +79,9 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="contact.js"></script>
 </body>
+
 </html>

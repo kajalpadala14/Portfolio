@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    /* position: sticky; */
+    position: sticky;
 }
 .header-right{
     padding-right: 20px;
@@ -111,6 +111,8 @@ hr {
 }
 #image{
     border-radius: 50%;
+    height: 50vh;
+    width: 20wh;
 }
 #bebas-neue-regular{
     font-family: "Bebas Neue", sans-serif;

@@ -75,7 +75,7 @@ p {
 footer {
     background-color: rgba(255, 255, 255, 0.5);
     text-align: left;
-    width: 97%;
+    width: 100%;
     padding: 20px;
 }
 
@@ -84,6 +84,7 @@ footer {
     justify-content: flex-end;
     margin-top: 10px;
     padding-right: 20px;
+    margin-right: 20px;
 }
 
 .footer-content div {
@@ -101,6 +102,7 @@ footer {
     text-decoration: none;
     color: #000;
 }
+
 @media (max-width:768){
 
 }
